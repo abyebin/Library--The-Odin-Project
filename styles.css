@@ -17,13 +17,14 @@
 a{
     color: inherit
 }
-
-#main{
+body{
     background-color: var(--body-color);
 }
 
+
 #grid{
     display: grid;
+    min-width: 100%;
     min-height: 100vh;
     grid-template: 150px repeat(auto-fit,minmax(300px,1fr))/ 1fr 4fr 1.5fr ;
 }
@@ -344,6 +345,7 @@ a{
 
 .icons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 5px;
